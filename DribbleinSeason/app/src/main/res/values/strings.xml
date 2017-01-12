@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Shots in Season</string>
+
+    <string name="login_button_text">Click to Login</string>
+    <string name="title_activity_main">Home</string>
+
+    <string name="unknown">Unknown</string>
+    <string name="logout">LOG OUT</string>
+
+    <string name="drawer_menu_home">Home</string>
+    <string name="drawer_menu_likes">Likes</string>
+    <string name="drawer_menu_buckets">Buckets</string>
+
+    <string name="open_drawer">Open drawer</string>
+    <string name="close_drawer">Close drawer</string>
+    <string name="user_profile_picture">User Profile Picture</string>
+
+    <string name="share">Share</string>
+    <string name="share_shot">Share this Shot!</string>
+
+    <string name="choose_bucket">Please Choose a Bucket!</string>
+
+    <string name="shot_count_single">%1$d shot</string>
+    <string name="shot_count_plural">%1$d shots</string>
+
+    <string name="new_bucket_title">New bucket</string>
+    <string name="new_bucket_create">Create</string>
+    <string name="new_bucket_cancel">Cancel</string>
+    <string name="new_bucket_name">Bucket name</string>
+    <string name="new_bucket_description">Bucket description</string>
+
+    <string name="save">Save</string>
+    <string name="shot_detail_loading_buckets">Loading buckets......</string>
+</resources>

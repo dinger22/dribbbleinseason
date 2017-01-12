@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.Yinghao.dingy.dribbleinseason">
+    <!--<a href='http://www.freepik.com/free-vector/chinese-new-year-background_998901.htm'>Designed by Freepik</a>-->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.Yinghao.dingy.dribbleinseason.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <activity android:name="com.Yinghao.dingy.dribbleinseason.views.LogInActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.Yinghao.dingy.dribbleinseason.views.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.Yinghao.dingy.dribbleinseason.views.AuthWebActivity" />
+        <activity android:name="com.Yinghao.dingy.dribbleinseason.Shot.ShotActivity"></activity>
+        <activity android:name="com.Yinghao.dingy.dribbleinseason.Bucket.BucketListActivity"></activity>
+        <activity android:name="com.Yinghao.dingy.dribbleinseason.Bucket.BucketShotListActivity"></activity>
+
+    </application>
+
+</manifest>

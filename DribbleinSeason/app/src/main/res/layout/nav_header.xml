@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/padding_space_l"
+    android:paddingBottom="@dimen/padding_space_m"
+    android:paddingLeft="@dimen/padding_space_m"
+    android:paddingRight="@dimen/padding_space_m"
+    android:background="@color/colorPrimary">
+    <ImageView
+        android:id="@+id/nav_header_user_picture"
+        android:layout_width="@dimen/drawee_size"
+        android:layout_height="@dimen/drawee_size"
+        android:padding="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/user_profile_picture"
+        tools:src="@drawable/ic_account_box_white_24px" />
+    <TextView
+        android:id="@+id/nav_header_user_name"
+        android:text="@string/unknown"
+        android:textColor="@color/colorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/nav_header_user_picture"
+        android:layout_alignTop="@id/nav_header_user_picture"
+        style="@style/AppTheme.TextView.nav_header"/>
+
+    <TextView
+        android:id="@+id/nav_header_log_out"
+        android:text="@string/logout"
+        android:textColor="@color/colorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AppTheme.TextView.nav_header.Clickable.white"
+        android:layout_alignBottom="@+id/nav_header_user_picture"
+        android:layout_toRightOf="@+id/nav_header_user_picture" />
+
+</RelativeLayout>
